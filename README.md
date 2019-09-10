@@ -28,6 +28,7 @@
 ```
 * copy th others files python.vim and c.vim in file .vim 
 ```
+	cd vim/
 	cp python.vim $HOME/.vim/
 	cp c.vim $HOME/.vim 
 ```
