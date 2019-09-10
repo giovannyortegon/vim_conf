@@ -1,0 +1,27 @@
+set encoding=utf-8
+syntax enable
+set number
+" Mouse
+set mouse=a
+set clipboard+=named
+" Search
+set incsearch
+set hlsearch
+" Mode
+set showmode
+" Highlight commads
+set showcmd
+set wildmenu
+" Save
+set autowriteall
+set commentstring=\ #\ %s
+set shell=bash\ -login
+" Theme
+colorscheme nighted
+" To enable file
+filetype on
+augroup python_settings
+	autocmd FileType python source /home/skill/.vim/python.vim
+	autocmd FileType c source /home/skill/.vim/c.vim
+	autocmd FileType full_stack source /home/skill/.vim/full.vim
+augroup END
