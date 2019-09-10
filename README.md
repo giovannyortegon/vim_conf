@@ -10,7 +10,9 @@
 	cp vimrc $HOME/.vimrc
 ```
 * Copy vim to $HOME (It store some themes) you can replace or copy ony files taht you need. 
+```
 	cp -rf vim $HOME/.vim
+```
 ## Multiple Languages
 * Clone vim_conf
 ```
@@ -19,6 +21,10 @@
 * Copy vimrc_mul to $HOME changing name .vimrc replace or copy only sets that you need
 ```
 	cp vimrc_mul $HOME/.vimrc
+```
+* Copy vim to $HOME (It store some themes) you can replace or copy ony files taht you need. 
+```
+	cp -rf vim $HOME/.vim
 ```
 * copy th others files python.vim and c.vim in file .vim 
 ```
