@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead *.py
+autocmd BufNewFile,BufRead *.py FileType=python
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -6,4 +6,4 @@ set textwidth=79
 set expandtab
 set autoindent
 set backspace=indent,eol,start
-set fileformat=unix
+" set fileformat=unix

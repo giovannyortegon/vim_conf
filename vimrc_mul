@@ -1,5 +1,7 @@
 set encoding=utf-8
 syntax enable
+" Cursor
+set cursorline
 set number
 " Mouse
 set mouse=a
@@ -21,7 +23,20 @@ colorscheme nighted
 " To enable file
 filetype on
 augroup python_settings
-	autocmd FileType python source /home/skill/.vim/python.vim
-	autocmd FileType c source /home/skill/.vim/c.vim
-	autocmd FileType full_stack source /home/skill/.vim/full.vim
+	autocmd FileType python source $HOME/.vim/python.vim
 augroup END
+augroup c_settings
+	autocmd FileType c source $HOME/.vim/c.vim
+augroup END
+augroup arm_settings
+	autocmd FileType asm source $HOME/.vim/arm.vim
+augroup END
+augroup arm_settings
+	autocmd FileType sh source $HOME/.vim/bash.vim
+augroup END
+augroup full_stack_settings
+	autocmd FileType html source $HOME/.vim/full.vim
+	autocmd FileType css source $HOME/.vim/full.vim
+	autocmd FileType javascript source $HOME/.vim/full.vim
+augroup END
+

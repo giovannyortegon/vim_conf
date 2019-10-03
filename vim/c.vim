@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead *.c
+autocmd BufNewFile,BufRead *.c, *.h FileType=c
 set tabstop=4 
 set shiftwidth=4
 set autoindent
