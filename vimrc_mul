@@ -6,6 +6,29 @@ set number
 " Mouse
 set mouse=a
 set clipboard+=named
+" iteration lines
+set listchars=tab:\|\ ,eol:<
+set list
+" File Explorer
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+" Open Explorer command
+map <silent> <C-n> :Vexplore<CR>
+" Open Terminal command
+map <silent> <C-t> :rightbelow term bash<CR>
+" Auto-open explorer
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+" Auto open explorer and terminal
+"autocmd VimEnter *
+"    \ Vexplore |
+"    \ execute "wincmd l" |
+"    \ rightbelow term bash
 " Search
 set incsearch
 set hlsearch
