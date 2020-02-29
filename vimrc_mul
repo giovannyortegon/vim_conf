@@ -42,7 +42,12 @@ set autowriteall
 set commentstring=\ #\ %s
 set shell=bash\ -login
 " Theme
-colorscheme nighted
+"colorscheme nighted
+set termguicolors
+set background=dark
+let g:edge_style = 'neon'
+let g:edge_disable_italic_comment = 1
+colorscheme edge
 " To enable file
 filetype on
 augroup python_settings
