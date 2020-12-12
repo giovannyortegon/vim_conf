@@ -19,6 +19,8 @@ let g:netrw_winsize = 15
 map <silent> <C-n> :Vexplore<CR>
 " Open Terminal command
 map <silent> <C-t> :rightbelow term bash<CR>
+" Open new vertical window
+map <silent> <C-l> :rightbelow vsplit<CR>
 " Auto-open explorer
 "augroup ProjectDrawer
 "  autocmd!
