@@ -58,10 +58,16 @@ augroup END
 augroup c_settings
 	autocmd FileType c source $HOME/.vim/c.vim
 augroup END
-augroup arm_settings
-	autocmd FileType asm source $HOME/.vim/arm.vim
+augroup cpp_settings
+	autocmd FileType cpp source $HOME/.vim/cpp.vim
 augroup END
-augroup arm_settings
+augroup header_settings
+	autocmd FileType h source $HOME/.vim/h.vim
+augroup END
+augroup asm_settings
+	autocmd FileType asm source $HOME/.vim/asm.vim
+augroup END
+augroup sh_settings
 	autocmd FileType sh source $HOME/.vim/bash.vim
 augroup END
 augroup full_stack_settings
