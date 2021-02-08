@@ -99,6 +99,9 @@ map <silent> <C-l> :rightbelow vsplit<CR>
  augroup c_settings
          autocmd FileType c source $VIMRUNTIME\syntax\c.vim
  augroup END
+ augroup cpp_settings
+         autocmd FileType c source $VIMRUNTIME\syntax\cpp.vim
+ augroup END
  augroup h_settings
          autocmd FileType c source $VIMRUNTIME\syntax\h.vim
  augroup END
