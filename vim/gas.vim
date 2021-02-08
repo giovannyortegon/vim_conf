@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead *.asm FileType=asm
+autocmd BufNewFile,BufRead *.s FileType=s
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
