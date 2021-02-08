@@ -43,13 +43,14 @@ function MyDiff()
   if exists('l:shxq_sav')
     let &shellxquote=l:shxq_sav
   endif
+endfunction
 set encoding=utf-8
- syntax enable
+syntax enable
 " No backup
  set nobackup
  set nowritebackup
  set noundofile
-" Iteration lines 
+" Iteration lines
 set listchars=tab:.\ , eol:<
 set list
 " File Explorer
@@ -96,10 +97,16 @@ map <silent> <C-l> :rightbelow vsplit<CR>
          autocmd FileType python source $VIMRUNTIME\syntax\python.vim
  augroup END
  augroup c_settings
-         autocmd FileType c source $VIMRUNTIME\syntax\c1.vim
+         autocmd FileType c source $VIMRUNTIME\syntax\c.vim
+ augroup END
+ augroup h_settings
+         autocmd FileType c source $VIMRUNTIME\syntax\h.vim
+ augroup END
+ augroup as_settings
+         autocmd FileType c source $VIMRUNTIME\syntax\gas.vim
  augroup END
  augroup asm_settings
-         autocmd FileType asm source $VIMRUNTIME\syntax\asmN.vim
+         autocmd FileType asm source $VIMRUNTIME\syntax\asm.vim
  augroup END
  augroup arm_settings
          autocmd FileType sh source $VIMRUNTIME\syntax\bash.vim
@@ -109,4 +116,3 @@ map <silent> <C-l> :rightbelow vsplit<CR>
         autocmd FileType css source $VIMRUNTIME\syntax\full.vim
         autocmd FileType javascript source $VIMRUNTIME\syntax\full.vim
  augroup END
-endfunction
