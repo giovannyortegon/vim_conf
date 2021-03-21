@@ -1,6 +1,10 @@
 set encoding=utf-8
 syntax enable
+set statusline=%{getcwd()}\/\%f%=%-14.(%l,%c%V%)\ %P
+
 " Cursor
+au WinLeave * set nocursorline
+au WinEnter * set cursorline
 set cursorline
 set number
 " Mouse
@@ -78,4 +82,12 @@ augroup full_stack_settings
 	autocmd FileType css source $HOME/.vim/full.vim
 	autocmd FileType javascript source $HOME/.vim/full.vim
 augroup END
+" close brackets
+:inoremap ( ()<Esc>i
+":inoremap < <><Esc>i
+:inoremap { {}<Esc>i
+:inoremap [ []<Esc>i
+:inoremap " ""<Esc>i
+:inoremap ' ''<Esc>i
+:inoremap ` ``<Esc>i
 
