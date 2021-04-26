@@ -11,8 +11,18 @@ set number
 set mouse=a
 set clipboard+=named
 " iteration lines
-set listchars=tab:.\ ,eol:<
 set list
+set listchars=tab:.\ ,eol:<
+" use indents of 4 spaces
+set shiftwidth=4
+" tabs are spaces, not tabs
+set expandtab
+" an indentation every four columns
+set tabstop=4
+" let backspace delete indent
+set softtabstop=4
+" round indent to the nearest multiple of shiftwidth
+set shiftround
 " File Explorer
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
