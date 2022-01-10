@@ -23,7 +23,6 @@ au WinLeave * set nocursorline
 au WinEnter * set cursorline
 set cursorline
 set number
-set paste
 " Mouse
 set mouse=a
 set clipboard+=named
