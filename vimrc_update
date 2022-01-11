@@ -4,25 +4,19 @@ set statusline=%{getcwd()}\/\%f%=%-14.(%l,%c%V%)\ %P
 " Title
 set title
 set ruler
+set textwidth=79
+" Cursor
+au WinLeave * set nocursorline
+au WinEnter * set cursorline
+"set paste
+set cursorline
+set number
 " Whitespaces
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=cyan guibg=cyan
 autocmd InsertLeave * redraw!
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 autocmd BufWritePre * :%s/\s\+$//e
-" close brackets
-:inoremap ( ()<Esc>i
-":inoremap < <><Esc>i
-:inoremap { {}<Esc>i
-:inoremap [ []<Esc>i
-:inoremap " ""<Esc>i
-:inoremap ' ''<Esc>i
-:inoremap ` ``<Esc>i
-" Cursor
-au WinLeave * set nocursorline
-au WinEnter * set cursorline
-set cursorline
-set number
 " Mouse
 set mouse=a
 set clipboard+=named
@@ -41,7 +35,6 @@ set shiftround
 set autoindent
 set smartindent
 set backspace=indent,eol,start
-set textwidth=79
 set cindent
 " File Explorer
 let g:netrw_banner = 0
@@ -74,3 +67,22 @@ set background=dark
 let g:edge_style = 'neon'
 let g:edge_disable_italic_comment = 1
 colorscheme edge
+" close brackets
+:inoremap ( ()<Esc>i
+:inoremap < <><Esc>i
+:inoremap { {}<Esc>i
+:inoremap [ []<Esc>i
+:inoremap " ""<Esc>i
+:inoremap ' ''<Esc>i
+:inoremap ` ``<Esc>i
+
+" clang stuff
+let g:clang_library_path='/usr/lib/'
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_compelte_macros=1
+let g:clang_complete_copen = 1
+let g:clang_debug = 1
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+let g:clang_snippets_engine='clang_complete'
