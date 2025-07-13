@@ -138,6 +138,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# >>> conda initialize >>>
-# <<< conda initialize <<<
-
